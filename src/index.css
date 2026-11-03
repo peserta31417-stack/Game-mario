@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.font-game {
+  font-family: 'Fredoka', cursive, system-ui, sans-serif;
+}
+
+.font-mono-score {
+  font-family: 'Space Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom platformer styled animations & pixel-perfect shadows */
+.text-stroke-sm {
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+}
+
+.text-stroke-md {
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.6);
+}
+
+.text-stroke-lg {
+  -webkit-text-stroke: 3px rgba(0, 0, 0, 0.7);
+}
+
+.game-btn-shadow {
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.25);
+}
+
+.game-btn-shadow:active {
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+  transform: translateY(4px);
+}
+
+.game-panel-shadow {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2), 0 8px 10px -6px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes float-cloud {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(12px); }
+  100% { transform: translateX(0); }
+}
+
+.animate-float {
+  animation: float-cloud 4s ease-in-out infinite;
+}

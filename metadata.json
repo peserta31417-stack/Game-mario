@@ -1,0 +1,6 @@
+{
+  "name": "MARIO MATH ADVENTURE — Petualangan Matematika SMP",
+  "description": "Game edukasi petualangan platformer 2D matematika SMP yang interaktif, seru, dan responsif untuk siswa dan guru.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
