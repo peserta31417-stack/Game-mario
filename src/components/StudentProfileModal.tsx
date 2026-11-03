@@ -9,7 +9,7 @@ interface StudentProfileModalProps {
   onClose: () => void;
 }
 
-const DEFAULT_CLASSES = ['7A', '7B', '7C', '8A', '8B', '8C', '9A', '9B', '9C'];
+const DEFAULT_CLASSES = ['7A', '7B', '7C', '8A', '8B', '8C', '9A', '9B', '9C', '9D'];
 
 export const StudentProfileModal: React.FC<StudentProfileModalProps> = ({
   currentStudent,

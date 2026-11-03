@@ -95,6 +95,24 @@ const INITIAL_DEMO_RECORDS: StudentScoreRecord[] = [
     completedAt: '2026-11-02 11:05:40',
     passedKKM: true,
   },
+  {
+    id: 'rec_demo_6',
+    studentId: 'std_demo_6',
+    studentName: 'Fajar Nugraha',
+    gradeClass: '9D',
+    studentNumber: '15',
+    missionTitle: 'Volume Tabung & Kerucut (SMP 9)',
+    category: 'UJIAN_KHUSUS',
+    score: 100,
+    pointsEarned: 2500,
+    coinsEarned: 25,
+    correctAnswers: 5,
+    totalQuestions: 5,
+    accuracy: 100,
+    timeSpentSeconds: 210,
+    completedAt: '2026-11-02 11:20:00',
+    passedKKM: true,
+  },
 ];
 
 export function getCurrentStudent(): StudentProfile | null {

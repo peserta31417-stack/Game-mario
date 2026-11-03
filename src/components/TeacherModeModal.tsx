@@ -119,8 +119,9 @@ export const TeacherModeModal: React.FC<TeacherModeModalProps> = ({
       ? Math.max(...filteredScoreRecords.map((r) => r.score))
       : 0;
 
-  // Extract unique classes for filter
-  const uniqueClasses = Array.from(new Set(scoreRecords.map((r) => r.gradeClass))).sort();
+  // Extract unique classes for filter including 9D
+  const allKnownClasses = ['7A', '7B', '7C', '8A', '8B', '8C', '9A', '9B', '9C', '9D'];
+  const uniqueClasses = Array.from(new Set([...allKnownClasses, ...scoreRecords.map((r) => r.gradeClass)])).sort();
 
   const handleAddQuestion = (e: React.FormEvent) => {
     e.preventDefault();
